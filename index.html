@@ -382,6 +382,54 @@
     @keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
     .rsvp-confirmation.show { display: block; }
 
+    /* ─── Directions ─── */
+    .directions-section {
+      background: linear-gradient(135deg, rgba(124,58,237,0.08), rgba(196,168,245,0.15));
+      border: 1.5px solid rgba(124,58,237,0.2);
+      border-radius: var(--radius-xl);
+      padding: var(--space-4) var(--space-5);
+    }
+    .directions-title {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-4);
+    }
+    .directions-grid {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+    }
+    .direction-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-3);
+    }
+    .direction-icon-wrap {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      width: 2.2rem;
+      text-align: center;
+      margin-top: 1px;
+    }
+    .direction-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
+    }
+    .direction-label {
+      font-size: var(--text-sm);
+      font-weight: 800;
+      color: var(--color-purple);
+    }
+    .direction-text {
+      font-size: var(--text-sm);
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
     /* ─── Countdown ─── */
     .countdown-section { text-align: center; }
     .countdown-label {
@@ -588,6 +636,34 @@
           <div class="highlight-item">
             <span class="highlight-icon">🛝</span>
             <span class="highlight-text">Kids' Playroom to use up all our kids' energy!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to Get There -->
+      <div class="directions-section">
+        <p class="directions-title">🗺️ How to Get There</p>
+        <div class="directions-grid">
+          <div class="direction-item">
+            <div class="direction-icon-wrap">🚗</div>
+            <div class="direction-content">
+              <span class="direction-label">By Car</span>
+              <span class="direction-text">Park at the visitor parking lots of Parc City or Nina Mall 2. Approx $25/hr.</span>
+            </div>
+          </div>
+          <div class="direction-item">
+            <div class="direction-icon-wrap">🚇</div>
+            <div class="direction-content">
+              <span class="direction-label">By MTR</span>
+              <span class="direction-text">Exit at Tsuen Wan West station — follow the clear signs inside the station for Parc City (multiple exits available).</span>
+            </div>
+          </div>
+          <div class="direction-item">
+            <div class="direction-icon-wrap">🎉</div>
+            <div class="direction-content">
+              <span class="direction-label">Finding the Party Room</span>
+              <span class="direction-text">Head to the Podium level (L3), between Tower 7 &amp; 8.</span>
+            </div>
           </div>
         </div>
       </div>
